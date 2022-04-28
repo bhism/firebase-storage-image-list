@@ -73,8 +73,7 @@ class _HomeState extends State<Home> {
               var image = liss[index];
               return GestureDetector(
                 onTap: () {
-                  // print(image.url.toString());
-                  // print(image.toString());
+                  
                   downl(image);
                 },
                 child: ListTile(
@@ -89,8 +88,7 @@ class _HomeState extends State<Home> {
   }
 
   downl(Reference ref) async {
-    // var sav = await getApplicationDocumentsDirectory();
-    // var file = File('$')
+   
 
     url = await ref.getDownloadURL().whenComplete(() {
       setState(() {
